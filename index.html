@@ -3,20 +3,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RPSLS</title>
+    <title>Games</title>
 </head>
 <body>
-    <h1>Computer Choice: </h1><h2 id="computer-choice"></h2>
-    <h1>Your Choice: </h1><h2 id="user-choice"></h2>
-    <br>
-    <h1>Results: </h1><h2 id="results"></h2>
-    <div>
-        <button class="choices" id="rock">rock</button>
-        <button class="choices" id="paper">paper</button>
-        <button class="choices" id= "scissors">scissors</button>
-        <button class="choices" id= "lizard">lizard</button>
-        <button class="choices" id= "spock">spock</button>
-    </div>
+    <section class='rpsls'>
+        <h1>Computer Choice: </h1><h2 id="computer-choice"></h2>
+        <h1>Your Choice: </h1><h2 id="user-choice"></h2>
+        <br>
+        <h1>Results: </h1><h2 id="results"></h2>
+        <div>
+            <button class="choices" id="rock">rock</button>
+            <button class="choices" id="paper">paper</button>
+            <button class="choices" id= "scissors">scissors</button>
+            <button class="choices" id= "lizard">lizard</button>
+            <button class="choices" id= "spock">spock</button>
+        </div>
+    </section>
+    <section class='memory'>
+        <div>
+            <h3>Score: <span id="result"></span></h3>
+            <div class="gird"></div>
+        </div>
+    </section>
 </body>
-<script src="app.js"></script>
+<script src="rpsls.js"></script>
+<script src="memory.js"></script>
 </html>
