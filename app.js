@@ -5,6 +5,8 @@ let computerScore;
 let computerChosen;
 let userChosen;
 var result = results();
+var score = userScore && computerScore;
+const displayScore = document.getElementById("score");
 const displayResult = document.getElementsById("results");
 const computerChoice = document.getElementById("computer-choice");
 const randomNumber = Math.round(Math.random() * 5);
@@ -19,6 +21,7 @@ possibleChoices.forEach((possibleChoices) =>
     userChoice.innerHTML = userChosen;
     computerChoice.innerHTML = computerChosen;
     displayResult.innerHTML = result;
+    displayScore.innerHTML = score;
   })
 );
 //get random computer choice
